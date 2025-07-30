@@ -1,5 +1,5 @@
 import { formPen } from './common';
-import { Point } from '@meta2d/core/src/point';
+import { Point } from '@meta2d/core/point';
 import { getTextColor, getFont } from '@meta2d/core';
 import { pSBC } from '@meta2d/core';
 

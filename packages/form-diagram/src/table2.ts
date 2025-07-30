@@ -1,6 +1,6 @@
 import { formPen, cellData, Pos, ReplaceMode } from './common';
-import { Point } from '@meta2d/core/src/point';
-import { Rect } from '@meta2d/core/src/rect';
+import { Point } from '@meta2d/core/point';
+import { Rect } from '@meta2d/core/rect';
 import { calcRightBottom, calcTextLines, deepClone } from '@meta2d/core';
 
 export function table2(ctx: CanvasRenderingContext2D, pen: formPen) {
@@ -208,7 +208,7 @@ function initRect(pen: formPen) {
   pen.calculative.height = finalHight || height;
   pen.calculative.width = width;
   pen.calculative.height = finalHight || height;
- 
+
   if (!pen.height) {
     pen.height = pen.calculative.height;
   }

@@ -1,4 +1,4 @@
-import { Pen } from '@meta2d/core/src/pen';
+import { Pen } from '@meta2d/core/pen';
 export function interfaceClass(
   pen: Pen,
   ctx?: CanvasRenderingContext2D

@@ -2867,7 +2867,7 @@ export class Meta2d {
     if(!options.hasOwnProperty("keepalive")){
       Object.assign(options,{keepallive: 30});
     }
-    //  clean为false 时，clientId 是必填项 
+    //  clean为false 时，clientId 是必填项
     // if(options.clientId && !options.hasOwnProperty("clean")){
     //   Object.assign(options,{clean: false});
     // }
@@ -2911,7 +2911,7 @@ export class Meta2d {
     });
     this.mqttClients[net.index].on('connect', (connack) => {
       reconnectDelay = 1000;
-      
+
       if (!connack.sessionPresent) {
         // 创建了新会话或没有找到旧会话，需要重新订阅主题
         if (net.topics) {
@@ -3307,7 +3307,7 @@ export class Meta2d {
       let tokenkeys = [globalThis.le5leSSOTokenName ?? 'ssotoken',globalThis.le5leTokenName ?? 'token'];
       if(tokenkeys.includes(key)){
         lsValue = d(lsValue)
-      } 
+      }
     }
     let params = queryURLParams();
     let value = params[key] || lsValue || getCookie(key) || globalThis[key] || '';

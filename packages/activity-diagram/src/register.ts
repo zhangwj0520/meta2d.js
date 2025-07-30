@@ -1,5 +1,5 @@
 import { Pen } from '@meta2d/core';
-import { rectangle } from '@meta2d/core/src/diagrams';
+import { rectangle } from '@meta2d/core';
 import { activityFinal } from './final';
 import { swimlaneH } from './swimlaneH';
 import { swimlaneV } from './swimlaneV';

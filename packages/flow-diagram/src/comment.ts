@@ -1,4 +1,4 @@
-import { Pen } from '@meta2d/core/src/pen';
+import { Pen } from '@meta2d/core/pen';
 export function flowComment(pen: Pen, ctx?: CanvasRenderingContext2D): Path2D {
   const path = !ctx ? new Path2D() : ctx;
   const { x, y, width, ey } = pen.calculative.worldRect;

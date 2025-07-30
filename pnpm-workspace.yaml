@@ -1,2 +1,5 @@
 packages:
   - 'packages/*'
+  - 'app'
+  - 'examples/diagram-editor-vue3'
+

@@ -2,8 +2,14 @@
   "name": "@meta2d/core",
   "version": "1.0.84",
   "description": "@meta2d/core: Powerful, Beautiful, Simple, Open - Web-Based 2D At Its Best .",
-  "main": "index.ts",
-  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "main": "./src/index.ts",
+  "types": "./src/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -34,6 +40,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "78f2a53ca1839c89b56e2e498d17ba4eb987ad14"
+  }
 }

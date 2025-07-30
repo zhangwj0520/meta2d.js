@@ -1,6 +1,6 @@
 import { getTextLength, initOptions } from './common';
 import { formPen } from './common';
-import { Point } from '@meta2d/core/src/point';
+import { Point } from '@meta2d/core/point';
 import { getTextColor, getFont } from '@meta2d/core';
 import { pSBC } from '@meta2d/core';
 
@@ -260,7 +260,7 @@ function onValue(pen: formPen) {
 function beforeValue(pen: formPen, value) {
   (pen.calculative as any).flag = false;
   if(value.options!==undefined||value.direction!==undefined||value.optionInterval!==undefined||value.optionHeight!==undefined){
-    (pen.calculative as any).flag = true; 
+    (pen.calculative as any).flag = true;
   }
   return value;
 }
